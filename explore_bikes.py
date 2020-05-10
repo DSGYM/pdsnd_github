@@ -44,7 +44,6 @@ MONTHS_REVERSE = {
     "12": "December",
 }
 
-
 DAYS = {
     "sunday": "0",
     "monday": "1",
@@ -67,7 +66,7 @@ DAYS_REVERSE = {
 }
 
 
-def get_filters():
+def getFilters():
     dataset_found = False
     month_found = False
     day_found = False
@@ -118,7 +117,7 @@ def get_filters():
     return [dataset_var, month_var, day_var]
 
 
-def load_data(city, month, day):
+def loadData(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
 
@@ -150,7 +149,7 @@ def load_data(city, month, day):
     return df
 
 
-def time_stats(df, month, day):
+def timeStats(df, month, day):
     """Displays statistics on the most frequent times of travel."""
 
     print("\nCalculating The Most Frequent Times of Travel...\n")
@@ -181,7 +180,7 @@ def time_stats(df, month, day):
     print("-" * 40)
 
 
-def station_stats(df):
+def stationStats(df):
     """Displays statistics on the most popular stations and trip."""
 
     print("\nCalculating The Most Popular Stations and Trip...\n")
@@ -224,7 +223,7 @@ def station_stats(df):
     print("-" * 40)
 
 
-def trip_duration_stats(df):
+def tripDurationStats(df):
     """Displays statistics on the total and average trip duration."""
 
     print("\nCalculating Trip Duration...\n")
@@ -244,7 +243,7 @@ def trip_duration_stats(df):
     print("-" * 40)
 
 
-def user_stats(df, city):
+def userStats(df, city):
     """Displays statistics on bikeshare users."""
 
     print("\nCalculating User Stats...\n")
@@ -295,8 +294,8 @@ def user_stats(df, city):
 
 def main():
     while True:
-        city, month, day = get_filters()
-        df = load_data(city, month, day)
+        city, month, day = getFilters()
+        df = loadData(city, month, day)
 
         if df.shape[0] > 0:
             five_lines = input(
@@ -305,10 +304,10 @@ def main():
             if five_lines.lower() == "yes":
                 print(df.head(5))
 
-            time_stats(df, month, day)
-            station_stats(df)
-            trip_duration_stats(df)
-            user_stats(df, city)
+            timeStats(df, month, day)
+            stationStats(df)
+            tripDurationStats(df)
+            userStats(df, city)
         else:
             print(
                 "No data available for the selected filter options. Please select other filters!"

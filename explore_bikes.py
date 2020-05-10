@@ -73,7 +73,7 @@ def getFilters():
 
     print("Hello! Let´s explorer some US Bikeshare data!")
 
-    while dataset_found == False:
+    while dataset_found is False:
         dataset = (
             input(
                 "Which city are you interested in? Washington, Chicago or New York City? "
@@ -87,7 +87,7 @@ def getFilters():
         else:
             print("Sorry, city was not found. Please check your spellings")
 
-    while month_found == False:
+    while month_found is False:
         month = (
             input(
                 "Which month are you interested in? Type 'None' if you do not want to apply a filter "
@@ -101,7 +101,7 @@ def getFilters():
         else:
             print("Please enter a valid month!")
 
-    while day_found == False:
+    while day_found is False:
         day = (
             input(
                 "Which weekday are you interested in? Type 'None' if you do not want to apply a filter "

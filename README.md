@@ -1,6 +1,6 @@
 ### Date created
 
-10.05.2020
+2020/05/10
 
 ### Udacity Github Project with Bikeshare Exploration
 

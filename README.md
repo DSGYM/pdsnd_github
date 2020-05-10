@@ -16,7 +16,7 @@ Files can be accessed at Udacity with Enrolling in the Programming for Data Scie
 - new_york_city.csv
 - washington.csv
 
-### Credits
+### Credits and Sources
 
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html
 https://stackoverflow.com/questions/19384532/get-statistics-for-each-group-such-as-count-mean-etc-using-pandas-groupby

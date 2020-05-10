@@ -1,19 +1,21 @@
 ### Date created
 
-Include the date you created this project and README file.
+2020/05/10
 
-### Project Title
-
-Replace the Project Title
+### Udacity Github Project with Bikeshare Exploration
 
 ### Description
 
-Describe what your project is about and what it does
+This project allows you to analyze bikeshare data in New York City, Washington and Chicago. Please be aware that the data is not included in this Github reposity.
 
 ### Files used
 
-Include the files used
+Files can be accessed at Udacity with Enrolling in the Programming for Data Science with Python Nanodegree.
+
+- chicago.csv
+- new_york_city.csv
+- washington.csv
 
 ### Credits
 
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Book: Learning the Pandas Library: Python Tools for Data Munging, Analysis, and Visualization (Treading on Python Book 3) (English Edition)
